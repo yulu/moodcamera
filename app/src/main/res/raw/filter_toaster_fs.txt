@@ -1,0 +1,10 @@
+vec3 filter(vec3 color, vec3 frgb, sampler2D texture, vec2 texturePos){
+	// Calculate brightness, contrast and saturation.
+	color = brightness(color, 0.1);
+	color = contrast(color, 0.3);
+	color = saturation(color, 0.3);
+	
+	color = overlay(frgb, color, 0.6);
+	
+	return color;
+}

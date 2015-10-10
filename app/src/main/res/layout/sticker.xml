@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/sticker_bg"> 
+    
+    <ImageView
+        android:id="@+id/stickerTitleImg"
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+    
+	<GridView
+        android:id="@+id/myGrid"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:padding="15dp"
+    	android:verticalSpacing="10dp"   
+    	android:horizontalSpacing="10dp"
+    	android:numColumns="4"
+    	android:columnWidth="60dp"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center">
+	</GridView>
+
+</LinearLayout>

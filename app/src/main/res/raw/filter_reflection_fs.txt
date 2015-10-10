@@ -1,0 +1,23 @@
+vec2 circular(vec2 position){
+	vec2 p = position;
+	p.x = p.x + sin(p.y*80.)*0.001;
+	p.y = p.y + sin(p.x*80.)*0.001;
+
+	return p;
+}
+
+vec3 filter(vec3 color, vec3 frgb, sampler2D texture, vec2 texturePos) {
+
+	vec2 p = vTextureCoord;
+	
+	//devide the image into half
+	if(p.y <= 0.5){
+		p = vec2(p.x, 1.- p.y);
+		p = circular(p);
+	}
+	
+	color = texture2D(sTexture, p).rgb;
+		
+	return color;
+	
+}

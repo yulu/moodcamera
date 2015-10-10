@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mood Camera</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="fb_app_id">177326745749000</string>
+    <string name="wb_app_id">2072338978</string>
+    <string name="wc_app_id">wx232e1cb26c092459</string>
+    <string name="default_wb">#MoodCamera#</string>
+</resources>

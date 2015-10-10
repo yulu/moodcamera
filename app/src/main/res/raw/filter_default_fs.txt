@@ -1,0 +1,5 @@
+vec3 filter(vec3 color, vec3 frgb, sampler2D texture, vec2 texturePos) {
+
+	return color;
+	
+}

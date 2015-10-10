@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/share_bk" >
+
+    <RelativeLayout
+        android:id="@+id/pending_img_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/photo_bg" >
+
+        <ImageView
+            android:id="@+id/pending_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:padding="20dip" />
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="@null"
+            android:src="@drawable/cancel_selector" />
+
+    </RelativeLayout>
+ 
+	<LinearLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageButton
+                android:id="@+id/local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@null"
+                android:clickable="true"
+                android:padding="5dip"
+                android:src="@drawable/file_selector" />
+
+            <ImageButton
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/email_selector"
+                android:state_selected="true" />
+            <ImageButton
+                android:id="@+id/weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/weibo_selector" />
+            <ImageButton
+                android:id="@+id/wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@null"
+                android:padding="5dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wechat_selector" />            
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@null"
+        android:src="@drawable/author" />
+
+	</LinearLayout>
+</LinearLayout>
