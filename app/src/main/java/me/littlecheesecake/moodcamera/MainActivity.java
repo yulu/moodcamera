@@ -31,7 +31,6 @@ import me.littlecheesecake.moodcamera.gl.GLRenderer;
 import me.littlecheesecake.moodcamera.stickers.StickerLayer;
 import me.littlecheesecake.moodcamera.util.GuideDialog;
 import me.littlecheesecake.moodcamera.util.OnSwipeTouchListener;
-import me.littlecheesecake.moodcamera.R;
 
 public class MainActivity extends Activity {
 	private final CamLayer mCamera = new CamLayer();
